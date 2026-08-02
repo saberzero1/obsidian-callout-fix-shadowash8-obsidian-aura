@@ -416,14 +416,14 @@ the colorful border interferes with the tab look. */
 .aura-origin-layout .callout {
 	border: none;
 	background-color: var(--background-secondary);
-	border-left: 4px solid rgb(var(--callout-color));
+	border-left: 4px solid var(--callout-color);
 }
 .aura-origin-layout .callout-title-inner {
 	font-weight: bold;
 	margin-left: 0.4em;
 }
 .aura-origin-layout .callout-title {
-	background-color: rgba(var(--callout-color), 0.14);
+	background-color: color-mix(in srgb, var(--callout-color) 14%, transparent);
 }
 
 /* ----- ***** Code and Code Blocks ***** ----- */

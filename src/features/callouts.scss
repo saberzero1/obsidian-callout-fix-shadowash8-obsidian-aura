@@ -12,7 +12,7 @@
 }
 .aura-callouts.aura-callouts-vanilla .callout .callout-title,
 .aura-callouts.aura-callouts-vanilla .callout .callout-content {
-	border-left: var(--size-2-3) solid rgb(var(--callout-color));
+	border-left: var(--size-2-3) solid var(--callout-color);
 }
 .aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
 	padding: 0px;
@@ -37,7 +37,7 @@
 	font-weight: normal;
 }
 .aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 	border-width: 1px;
 	border-radius: var(--callout-radius);
 	background-color: rgba(var(--cpt-mantle), 0.4);
@@ -45,7 +45,7 @@
 .aura-callouts.aura-callouts-sleek .callout-content {
 	padding: var(--callout-title-padding) var(--callout-title-padding)
 		var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
-	border-top: 1px dashed rgba(var(--callout-color), 0.4);
+	border-top: 1px dashed color-mix(in srgb, var(--callout-color) 40%, transparent);
 }
 .aura-callouts.aura-callouts-sleek .callout-fold {
 	padding-right: 0px;
@@ -54,7 +54,7 @@
 	--callout-title-padding: var(--size-4-2);
 }
 .aura-callouts.aura-callouts-sleek .callout.is-collapsible {
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 	border-width: 1px;
 	border-radius: var(--callout-radius);
 	background-color: rgba(var(--cpt-mantle), 0.4);
@@ -69,7 +69,7 @@
 .aura-callouts.aura-callouts-sleek
 	.callout.is-collapsible.is-collapsed
 	.callout-title {
-	background-color: rgba(var(--callout-color), 0.1);
+	background-color: color-mix(in srgb, var(--callout-color) 10%, transparent);
 	padding: var(--callout-title-padding);
 	cursor: pointer;
 }
@@ -84,9 +84,9 @@
 .aura-callouts.aura-callouts-sleek
 	.callout.is-collapsible:not(.is-collapsed)
 	.callout-title {
-	background-color: rgba(var(--callout-color), 0.1);
+	background-color: color-mix(in srgb, var(--callout-color) 10%, transparent);
 	padding: var(--callout-title-padding);
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 	cursor: pointer;
 }
 .aura-callouts.aura-callouts-sleek
@@ -94,7 +94,7 @@
 	.callout-content {
 	padding: var(--callout-title-padding) var(--callout-title-padding) 0
 		calc(var(--callout-title-padding) * 1.5);
-	border-top: 1px dashed rgba(var(--callout-color), 0.4);
+	border-top: 1px dashed color-mix(in srgb, var(--callout-color) 40%, transparent);
 }
 .aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
 	padding: 0px;
@@ -102,9 +102,9 @@
 .aura-callouts.aura-callouts-sleek
 	.callout:not(.is-collapsible)
 	.callout-title {
-	background-color: rgba(var(--callout-color), 0.1);
+	background-color: color-mix(in srgb, var(--callout-color) 10%, transparent);
 	padding: var(--callout-title-padding);
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 }
 .aura-callouts.aura-callouts-sleek .callout .list-collapse-indicator {
 	margin-left: -35px;
@@ -132,7 +132,7 @@
 	font-weight: bold;
 }
 .aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 	border-width: 1px;
 	border-radius: var(--callout-radius);
 	background-color: rgba(var(--cpt-mantle), 0.4);
@@ -148,7 +148,7 @@
 	--callout-title-padding: var(--size-4-2);
 }
 .aura-callouts.aura-callouts-block .callout.is-collapsible {
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 	border-width: 1px;
 	border-radius: var(--callout-radius);
 	background-color: rgba(var(--cpt-mantle), 0.4);
@@ -178,7 +178,7 @@
 	.callout.is-collapsible:not(.is-collapsed)
 	.callout-title {
 	padding: var(--callout-title-padding);
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 	cursor: pointer;
 }
 .aura-callouts.aura-callouts-block
@@ -194,7 +194,7 @@
 	.callout:not(.is-collapsible)
 	.callout-title {
 	padding: var(--callout-title-padding);
-	border-color: rgba(var(--callout-color), 0.4);
+	border-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
 }
 .aura-callouts.aura-callouts-block .callout .list-collapse-indicator {
 	margin-left: -35px;
